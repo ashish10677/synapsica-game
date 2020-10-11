@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Game Exercise</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="text-center" style="margin-top: 60px;">
+        <h1 class="display-3" id="welcome"></h1>
+        <h1 class="display-5" id="highscore"></h1>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <button type="button" class="btn btn-success waves-effect waves-light" id="game-starter" style="position: relative; top: 43%; left: 33%"
+                    onclick="startGame()">Start
+                    Playing</button>
+                <div id="game" style="display: none;">
+                    <p>Click the buttons to move the red square:</p>
+                    <div id="myfilter"
+                        style="position:absolute;background-color:#000000;opacity:0.3;width:322px;height:182px;display:none">
+                    </div>
+                    <div id="myrestartbutton"
+                        style="position:absolute;padding-top:75px;padding-left:120px;display:none;">
+                        <button onclick="restartGame()">Restart</button></div>
+                    <div id="canvascontainer"></div>
+                    <br>
+                    <div style="text-align:center;width:320px;">
+                        <button ontouchstart="moveup()" onmousedown="moveup()"
+                            onmouseup="clearmove()">UP</button><br><br>
+                        <button ontouchstart="moveleft()" onmousedown="moveleft()" onmouseup="clearmove()">LEFT</button>
+                        <button ontouchstart="moveright()" onmousedown="moveright()"
+                            onmouseup="clearmove()">RIGHT</button><br><br>
+                        <button ontouchstart="movedown()" onmousedown="movedown()" onmouseup="clearmove()">DOWN</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <table class="table" id="scores-table">
+                    <thead class="table table-bordered">
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Time</th>
+                            <th scope="col">Score</th>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <button type="button" style="position: absolute; right: 0; top:0;" class="btn btn-primary px-3"
+        onclick="logoutUser()"><i class="fas fa-sign-out-alt"></i></button>
+    <script src="js/connector.js"></script>
+    <script src="js/index.js"></script>
+
+</html>

@@ -1,0 +1,18 @@
+{
+    "10001": "Email already exists",
+    "10002": "Error in registering user",
+    "10003": "Error in finding user token",
+    "10004": "User already logged in",
+    "10005": "Unable to find user",
+    "10006": "Auth failed, email not found",
+    "10007": "Incorrect password",
+    "10008": "Error in comparing passwords",
+    "10009": "Error in generating token",
+    "10010": "Error in logging out user",
+    "10011": "Please provide valid score",
+    "10012": "Cannot validate number of attempts",
+    "10013": "Error in setting score",
+    "10014": "Only 10 attempts are allowed!",
+    "10015": "Error in getting number of attempts",
+    "10016": "User not logged in"
+}
