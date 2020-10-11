@@ -26,7 +26,7 @@ npm i
 nodemon index.js
 ```
 
-### Running the application
+### Running the client
 
 ``` 
 cd game-exercise
