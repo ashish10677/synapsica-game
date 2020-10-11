@@ -16,7 +16,7 @@ Notes -
 
 ## Running the application
 
-``` git clone https://www.github.com/ashish10677/synapsica-game```
+``` git clone https://github.com/ashish10677/synapsica-game.git```
 
 ### Running the server
 
